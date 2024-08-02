@@ -13,7 +13,7 @@ const Home = () => {
     const [showType, setShowtype] = useState(["table"]);
     useEffect(() => {
         setLoading(true);
-        axios.get('http://localhost:5555/books')
+        axios.get('https://books-management-system-iwug.onrender.com/books')
             .then(res => {
                 console.log('Fetched books:', res.data.data);  // Debug log
                 setBooks(res.data.data);

@@ -10,7 +10,7 @@ const ShowBook = () => {
     const{id}= useParams();
     useEffect(() =>{
         setLoading(true);
-        axios.get(`http://localhost:5555/books/${id}`)
+        axios.get(`https://books-management-system-iwug.onrender.com/books/${id}`)
        .then(res => {
         setBooks(res.data);
         setLoading(false);
