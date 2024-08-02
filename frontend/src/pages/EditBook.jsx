@@ -22,8 +22,7 @@ const EditBook = () => {
                 setPublisherYear(response.data.publisherYear);
                 setTitle(response.data.title);
                 setLoading(false);
-                enqueueSnackbar("Maa chud gyi!",{variant : 'success'})
-            })
+             })
             .catch((error) => {
                 setLoading(false);
                 enqueueSnackbar("Error happened: " + error.message, { variant: "error" });
